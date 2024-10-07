@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./Game of Thrones.ttf') format('truetype');
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+    background-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parallax {
+    position: relative;
+    height: 130vh;
+    overflow: hidden;
+}
+
+.parallax img {
+    position: absolute;
+    width: 100%;
+}
+
+.background {
+    filter: blur(2px);
+    filter: brightness(150%);
+}
+
+#drogo {
+    width: 1800px;
+    filter: grayscale(100%);
+    filter: saturate(50%);
+    filter: sepia(50%);
+}
+
+.daenerys {
+    filter: grayscale();
+    filter: sepia(60%);
+    z-index: 1;
+}
+
+.smokeLeft, .smokeRight {
+    z-index: 3;
+}
+
+#text {
+    position: absolute;
+    z-index: 0;
+}
+
+#text1 {
+    font-size: 90px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 50px;
+}
+
+.sec {
+    margin-top: 65.7%;
+    position: relative;
+    background-color: black;
+    min-height: 100vh;
+    padding: 5% 10%;
+    color: rgb(255, 222, 189);
+}
+
+.sec p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.parallax-section {
+    position: relative; 
+    overflow: hidden;  
+    min-height: 100vh;
+    padding: 5% 10%;
+    color: rgb(221, 255, 255);
+}
+
+.parallax-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./Images/imgs/bg1.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(4px); 
+    z-index: 1; 
+}
+
+.sec p {
+    position: relative; 
+    z-index: 2; 
+}
+
+.para{
+    text-align: justify;
+    letter-spacing: 3px;
+}
+.spark{
+    mix-blend-mode:screen;
+    position: absolute;
+    z-index: 1;
+    left: -20%;
+}
